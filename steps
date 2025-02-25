@@ -3,3 +3,20 @@ Video Guia
 https://www.youtube.com/watch?v=sYaEoNy5OGs
 Cómo hacer un CRUD con PHP y MySQL 🐘, paso a paso | Crear, eliminar y editar usuarios con PHP
 
+git commit -m "Primer commit, Creacion de folder para la aplicacion"
+
+git branch -M main
+git remote add origin https://github.com/Ederam/Php-Crud-MySql.git
+git push -u origin main
+
+crear archivo index.php
+! genera pagina
+
+crear form
+input*6 genera los 6 campos de entrada
+
+al editar para poder ver el archivo
+localhost/<nombre carpeta>
+localhost/Crud Php MySQL
+
+git commit -m "Creacion de plantilla inicial"
