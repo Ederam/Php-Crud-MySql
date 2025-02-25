@@ -1,0 +1,3 @@
+
+insert en users de mysql con localhost/phpmyadmin
+INSERT INTO `users` (`id`, `name`, `lastname`, `username`, `password`, `email`) VALUES (NULL, 'Juan Camilo', 'Ramirez Lopez', 'Juanca', '1234', 'juan@correo.co');

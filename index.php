@@ -1,3 +1,12 @@
+<?php
+include("connection.php");
+$con = connection();
+
+$sql = "SELECT * FROM users";
+$query = mysqli_query($con, $sql);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,28 +45,21 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- <?php while ($row = mysqli_fetch_array($query)): ?> -->
+                <?php while ($row = mysqli_fetch_array($query)): ?>
                     <tr>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-
-                        <th><a href="Editar"></a></th>
-                        <th><a href="Eliminar"></a></th>
-
-                        <!-- <th><?= $row['id'] ?></th>
+                        <th><?= $row['id'] ?></th>
                         <th><?= $row['name'] ?></th>
                         <th><?= $row['lastname'] ?></th>
                         <th><?= $row['username'] ?></th>
                         <th><?= $row['password'] ?></th>
                         <th><?= $row['email'] ?></th>
-                        <th><a href="update.php?id=<?= $row['id'] ?>" class="users-table--edit">Editar</a></th>
+                        <th><a href="">Editar</a></th>
+                        <th><a href="" >Eliminar</a></th>
+
+                        <!-- <th><a href="update.php?id=<?= $row['id'] ?>" class="users-table--edit">Editar</a></th>
                         <th><a href="delete_user.php?id=<?= $row['id'] ?>" class="users-table--delete" >Eliminar</a></th> -->
                     </tr>
-                <!-- <?php endwhile; ?> -->
+                <?php endwhile; ?>
             </tbody>
         </table>
     </div>

@@ -20,3 +20,29 @@ localhost/<nombre carpeta>
 localhost/Crud Php MySQL
 
 git commit -m "Creacion de plantilla inicial"
+
+Proceso de creacion de base de datos
+Subir Mysql en Xampp
+Acceder en el navegador 
+    localhost/phpmyadmin
+    usuario inicial root
+    password vacio
+Luego de instalar MySql Workbeanch se da en start en xampp
+Luego de dar en start se accede de nuevo sin errores a loclahost/phpmyadmin sin errores
+
+Crear base de datos
+USERS_CRUD_PHP
+TABLA users CON 6 COLUMNS
+se crea con la interfaz  de loaclhost/phpmyadmin
+
+Crear archivo para la conexion
+    connection.php 
+    configurar cadena de conexion
+agregar codigo php al index que ejecuta una consulta y trae los datos de la tabla
+
+git commit -m "Se crea base de datos, se agrega tabla y se inserta registro desde interfaz web localhost/phpmyadmin"
+
+
+
+
+
